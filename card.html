@@ -379,7 +379,7 @@
                             backgroundWeight * backgroundColor;
                         
                         // Mieszanie z podstawową teksturą orła - orzeł pozostaje widoczny, hologram jest nakładką
-                        vec3 finalColor = eagleColor.rgb * (1.0 - holoMapColor.a * 0.2) + hologramColor * holoMapColor.a * 0.2;
+                        vec3 finalColor = eagleColor.rgb * (1.0 - holoMapColor.a * 0.3) + hologramColor * holoMapColor.a * 0.3;
                         
                         gl_FragColor = vec4(finalColor, eagleColor.a);
                     }
@@ -645,6 +645,7 @@
     });
 </script>
 </body>
+
 
 
 
